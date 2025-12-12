@@ -205,7 +205,7 @@ def fetch_all_nodes_background():
             # Build merged_pnodes_unique with peer_sources
             unique = {}
             for p in merged_pods:
-                key = p.get("pubkey") or p.get("address")
+                key = p.get("address")
                 if not key:
                     continue
 
